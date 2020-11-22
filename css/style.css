@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#header {
+    background-color: rgb(250, 198, 234);
+    color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(175, 155, 65)
+}
+
+#form-container {
+    padding: 40px;
+    margin: 40px;
+    border: 2px solid rgb(250, 198, 234);
+}
+
+.form-item {
+    display: flex;
+}
+
+.form-item > label {
+    padding: 10px 10px 10px 0px;
+}
+
+.form-item > input, select {
+    width: 99%
+}
+
+#content {
+margin: 20px;
+}
+
+#recipe-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.list-item {
+    border: 2px solid rgb(250, 198, 234);
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+}
+
+.list-item > hr {
+    margin: -10px 0px -10px 0px;
+}
+
+.list-item > h4 {
+    font-style: italic;
+    color: rgb(88, 88, 88);
+}
+

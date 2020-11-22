@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <title>Recipe List</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Recipe List</h1>
+    </header>
+    <div id="form-container">
+        <form id="new-recipe-form">
+            <div class="form-item">
+                <label for="title" class="label">Title:</label>
+                <br>
+                <input type="text" id="title" required/>
+            </div>
+            <br>
+            <div class="form-item">
+                <label for="decription" class="label">Description:</label>
+                <br>
+                <input type="text" id="description" required/>
+            </div>
+            <br>
+            <div class="form-item">
+                <label for="category" class="label">Category:</label>
+                <br>
+                <select id="category" required>
+                <option value="" disabled selected>Choose a category...</option>
+                <option value="Cake">Cake</option>
+                <option value="Biscuits and Cookies">Biscuits and Cookies</option>
+                <option value="Pastry">Pastry</option>
+                <option value="Desserts">Desserts</option>
+                <option value="Bread">Bread</option>
+                <option value="Other">Other</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" id="submit-button" value="Add Recipe"/>
+        </form>
+    </div>
+    <div id="content">
+        <h2>Recipe List</h2>
+        <ul id="recipe-list">
+            <!-- content adds here -->
+        </ul>
+        <form id="delete-all">
+            <button id="delete-all">Delete All</button>
+        </form>
+    </div>
+</body>
+</html>
